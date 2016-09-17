@@ -1,0 +1,138 @@
+body {
+    margin: 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+    font-weight: 200;
+    line-height: 20pt;
+    letter-spacing: .25px;
+    width: 100%;
+	}
+
+*{
+  padding:0;
+  margin:0;
+}
+
+/* MAIN MENU */
+#main-menu {
+    width: 100%;
+    min-width: 815px;
+    text-align: center;
+}
+
+#main-menu li {
+    vertical-align: middle;
+    width: 815px;
+    text-align: center;
+}
+
+.text-link {
+    position: relative;
+    top: -43px;
+}
+
+#container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.block {
+    height: 700px;
+    width: 100%;
+    background: url('mantle/TESTHPBOARD.png');
+}
+
+.block-text {
+    width: 100%;
+    position: relative;
+    top: 300px;
+}
+
+.fa {
+    word-spacing: 10px;
+}
+
+a {
+    font-family: 'Prompt', sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+    color: #F9B5C4;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+}
+
+ul {
+    font-family: 'Prompt', sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: normal;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    word-spacing: 75px;
+    letter-spacing: 4px;
+}
+
+li {
+    display: inline;
+}
+
+li a:hover {
+    color: #FFFFFF;
+}
+
+p {
+    margin: 26px;
+    line-height: 18pt;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    font-weight: strong;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 1px
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-style: italic;
+    word-spacing: 5px;
+    letter-spacing: .5px;
+    line-height: 55px;
+}
+
+
+h3:after
+    {
+    display:block;
+    border:2px solid:#000000;
+    }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+margin-top: 50px;
+text-align: center;
+font-size: 14px;
+font-family: 'Source Sans Pro'; sans-serif;
+color: #ffffff;
+background-color: #000000;
+}
+
