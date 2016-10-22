@@ -1,0 +1,229 @@
+/* BODY */
+body {
+    margin: 0px;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 16px;
+    font-weight: 400;
+    line-height: 20pt;
+    letter-spacing: .45px;
+    width: 100%;
+	}
+	
+#container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+::-moz-selection { 
+    background: pink;
+}
+
+::selection {
+    background: pink;
+}
+
+*{
+  padding:0;
+  margin:0;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 26px;
+    line-height: 18pt;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px
+}
+
+h3 {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+	font-style: italic;
+    letter-spacing: 1.5px;
+    line-height: 55px;
+}
+
+
+h3:after {
+    display:block;
+    border:2px solid:#000000;
+}
+
+/* MAIN MENU */
+#main-menu {
+    width: 100%;
+    min-width: 895px;
+    text-align: center;
+}
+
+#main-menu li {
+    vertical-align: middle;
+    width: 895px;
+    text-align: center;
+	top: -43px;
+}
+
+.text-link {
+    position: relative;
+	padding: 1px;
+}
+
+#logo {
+	padding: 14px;
+	display: inline-block;
+}
+
+.fa {
+    word-spacing: 10px;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    color: #ffffff;
+    word-spacing: 2px;
+    letter-spacing: 4px;
+    font-size: 11px;
+}
+
+ul {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 400;
+    list-style-type: none;
+   
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    word-spacing: 100px;
+    letter-spacing: 4px;
+}
+
+li {
+    display: inline;
+}
+
+li a:hover {
+    color: #F9B5C4;
+}
+
+/* HOMEPAGE MANTLE */
+.block {
+    height: 700px;
+    width: 100%;
+    background: url('../assets/mantles/TESTHPBOARD.png');
+}
+
+.block-text {
+    width: 100%;
+    position: relative;
+    top: 300px;
+}
+
+.about {
+    height: 700px;
+    width: 100%;
+    background: url('../assets/mantles/aboutVivianaMantle.png');
+}
+
+#about-text {
+	padding-top: 75px;
+}
+
+article {
+  webkit-columns: 2 100px;
+  moz-columns: 2 100px;
+  columns: 2 100px;
+  padding-left: 115px;
+  padding-right: 115px;
+}
+
+
+/* PROJECT 1 MANTLE */
+#project1 {
+    height: 400px;
+    width: 100%;
+    background: url('../assets/mantles/TESTHPBOARD.png');
+}
+
+.project-text {
+    width: 100%;
+    position: relative;
+    top: 150px;
+}
+
+/* IMAGE GRID */
+.thumbnail {
+    float: left;
+    line-height: 0px;
+}
+
+@media (max-width: 480px) {
+     body {
+       padding: 0;
+       margin: 0;
+     }
+}
+
+.overlay {
+  position: absolute;
+  display: inline-block;
+  top: 44%;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+}
+
+.work {
+	padding: 115px;
+	position: relative;
+	margin: 0;
+	display: block;
+}
+	
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#preFooterBlock {
+    background-color: #000000;
+    transform: skewX(65deg);
+    transform-origin: 100%;
+    display: block;
+}
+
+/* FOOTER */
+.footer {
+margin-top: 50px;
+text-align: center;
+font-size: 16px;
+font-weight: 300;
+line-height: 20pt;
+letter-spacing: .45px;
+font-family: 'Cormorant Garamond', serif;
+color: #ffffff;
+background-color: #000000;
