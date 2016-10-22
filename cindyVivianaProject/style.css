@@ -1,0 +1,74 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+li {
+    line-height: 85px;
+    padding: 20px;
+    display: inline;
+    margin: 0px;
+    padding-right: 50px;
+    color: #ffffff;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0px;
+}
+
+ul {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 300;;
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    margin: 0px;
+}
+
+.mainArticle {
+    padding: 35px;
+}
+
+.header {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    float: center;
+}
+
+#main-menu {
+    width: 100%;
+    min-width: 100%;
+    text-align: right;
+}
+
+#main-menu li {
+    vertical-align: center;
+    width: 960px;
+    text-align: right;
+}
+
+#logoSite {
+	float: left;
+	display: inline-block;
+}
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 50%;
+      margin: auto;
+
+  }
+
+
