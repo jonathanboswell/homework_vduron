@@ -179,11 +179,9 @@ article {
     line-height: 0px;
 }
 
-@media (max-width: 480px) {
-     body {
-       padding: 0;
-       margin: 0;
-     }
+.thumbnail:hover {
+    opacity: 0.2;
+    filter: alpha(opacity=20); /* For IE8 and earlier */
 }
 
 .overlay {
@@ -197,7 +195,7 @@ article {
 }
 
 .work {
-	padding: 115px;
+	padding: 0;
 	position: relative;
 	margin: 0;
 	display: block;
