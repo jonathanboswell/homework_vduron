@@ -1,0 +1,1 @@
+$(".thumbnail").addClass("load");​

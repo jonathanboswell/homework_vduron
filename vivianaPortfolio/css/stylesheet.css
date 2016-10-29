@@ -1,12 +1,14 @@
 /* BODY */
-body {
-    margin: 0px;
+html, body {
+    margin: 0;
+    padding: 0;
 	font-family: 'Cormorant Garamond', serif;
 	font-size: 16px;
     font-weight: 400;
-    line-height: 20pt;
+    line-height: 0pt;
     letter-spacing: .45px;
     width: 100%;
+    color: #000000;
 	}
 	
 #container {
@@ -16,11 +18,11 @@ body {
 }
 
 ::-moz-selection { 
-    background: pink;
+    background: #FEDFE2;
 }
 
 ::selection {
-    background: pink;
+    background: #FEDFE2;
 }
 
 *{
@@ -31,6 +33,7 @@ body {
 .img {
     max-width: 100%;
     height: auto;
+    border: 0;
 }
 
 p {
@@ -68,32 +71,46 @@ h3:after {
     border:2px solid:#000000;
 }
 
+h4 {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
 /* MAIN MENU */
-#main-menu {
+.navbar-default {
+    background: #000000;
     width: 100%;
-    min-width: 895px;
-    text-align: center;
+    display: inline-block;
+    padding: 35px;
+    margin: 0;
+    border-radius: 0;
 }
 
-#main-menu li {
-    vertical-align: middle;
-    width: 895px;
-    text-align: center;
-	top: -43px;
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  margin-top: -50px;
+  padding: 20px;     
 }
 
-.text-link {
-    position: relative;
-	padding: 1px;
+.navbar-default .navbar-toggle {
+  border-color: transparent;
 }
 
-#logo {
-	padding: 14px;
-	display: inline-block;
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+  border-radius: 0;
 }
 
-.fa {
-    word-spacing: 10px;
+.navbar-toggle:hover {
+  background-color: #000000;
 }
 
 a {
@@ -112,19 +129,19 @@ ul {
     font-size: 11px;
     font-weight: 400;
     list-style-type: none;
-   
     width: 100%;
-    background-color: #000000;
     color: #ffffff;
-    word-spacing: 100px;
+    word-spacing: 115px;
     letter-spacing: 4px;
 }
 
 li {
+    text-decoration: none;
     display: inline;
 }
 
 li a:hover {
+    text-decoration: none;
     color: #F9B5C4;
 }
 
@@ -133,30 +150,13 @@ li a:hover {
     height: 700px;
     width: 100%;
     background: url('../assets/mantles/TESTHPBOARD.png');
+    display: inline-block;
 }
 
 .block-text {
     width: 100%;
     position: relative;
     top: 300px;
-}
-
-.about {
-    height: 700px;
-    width: 100%;
-    background: url('../assets/mantles/aboutVivianaMantle.png');
-}
-
-#about-text {
-	padding-top: 75px;
-}
-
-article {
-  webkit-columns: 2 100px;
-  moz-columns: 2 100px;
-  columns: 2 100px;
-  padding-left: 115px;
-  padding-right: 115px;
 }
 
 
@@ -174,31 +174,70 @@ article {
 }
 
 /* IMAGE GRID */
-.thumbnail {
+.row .thumbnail {
     float: left;
     line-height: 0px;
+    border:0;
+    box-shadow:0;
+    border-radius:0;
+    margin: 0;
+    padding: 0;
+	
+	-webkit-transition: opacity 2s ease-in;
+       -moz-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+         -o-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
 }
 
-.thumbnail:hover {
-    opacity: 0.2;
-    filter: alpha(opacity=20); /* For IE8 and earlier */
+.row .thumbnail.load {
+	opacity: 1;
 }
 
-.overlay {
-  position: absolute;
-  display: inline-block;
-  top: 44%;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  text-align: center;
+.row [class*="col-"] {
+    line-height: none;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.caption {
+    position: absolute;
+    color: #000000;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.row .thumbnail:hover .caption {
+    padding-top: 40%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.row .thumbnail:hover #illuminateCaption {
+    color: #000000;
+    background:rgba(248,235,233, 0.8);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -o-transition:.45s ease-in-out;
+    -ms-transition:.45s ease-in-out;
+    -moz-transition:.45s ease-in-out;
+    -webkit-transition:.45s ease-in-out;
+    transition:.45s ease-in-out;
 }
 
 .work {
-	padding: 0;
+	padding: 100px;
 	position: relative;
 	margin: 0;
 	display: block;
+}
+
+@media (max-width: 767px) {
+  .container-fluid, .thumbnail {
+    padding:0px;
+    margin:0px;
+  }
 }
 	
 .row::after {
@@ -207,16 +246,29 @@ article {
     display: block;
 }
 
-#preFooterBlock {
-    background-color: #000000;
-    transform: skewX(65deg);
-    transform-origin: 100%;
-    display: block;
+/* ABOUT */
+.about {
+    height: 700px;
+    width: 100%;
+    background: url('../assets/mantles/aboutVivianaMantle.png');
+    display: inline-block;
+}
+
+#about-text {
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right:25px;
+}
+
+/* TOOLS */
+.tools {
+    padding: 75px;
 }
 
 /* FOOTER */
 .footer {
 margin-top: 50px;
+padding: 50px;
 text-align: center;
 font-size: 16px;
 font-weight: 300;
