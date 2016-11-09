@@ -31,25 +31,17 @@ $(function(){
 	
 	var page = window.location.hash.substring(1);
 	page = (page) ? page:'zsupply';
-	
+	var description = descriptions[page][0];
+	var website = descriptions[page][1];
+	$('#projectParagraph').append(description + website);
+
+
 	console.log(page);
 
 	for(var i = 0; i < pages[page].length; i++)
 	{
 		var imagePath = pages[page][i];
-		console.log(imagePath);
+		console.log(imagePath, description, website);
 		$('#imageContainer').append('<img src="./' + imagePath + '">');
-	}
-	
-	var page = window.location.hash.substring(1);
-	page = (page) ? page:'zsupply';
-	
-	console.log(page);
-
-	for(var i = 0; i < pages[page].length; i++)
-	{
-		var copyPath = pages[page][i];
-		console.log(imagePath);
-		$('#projectParagraph').append('<img src="./' + copyPath + '">');
 	}
 });
