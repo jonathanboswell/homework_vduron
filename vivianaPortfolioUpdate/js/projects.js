@@ -16,17 +16,17 @@ $(function(){
 	}
 
 	var descriptions = {
-		'zsupply': ['This is the project description for for Z Supply.','www.zsupplyclothing.com'],
-		'illuminate': ['This is the project description for Illuminate.','www.illuminatecosmetics.com'],
-		'soriano': ['This is the project description for Soriano.','www.sorianohair.com'],
-		'negarin': ['This is the project description for Negarin London.','www.negarinlondon.com'],
-		'revolve': ['This is the project description for Revolve.','www.revolve.com'],
-		'vow': ['This is the project description for Vow.','www.vowtobechic.com'],
-		'equipment': ['This is the project description for Equipment.','www.equipmentfr.com'],
-		'urban': ['This is the project description for Urban.','www.urbanexpressions.net'],
-		'bh': ['This is the project description for BH.','www.bhcosmetics.com'],
-		'ppz': ['This is the project description for PPZ.','www.com'],
-		'logos': ['This is the project description for logos.','website'],
+		'zsupply': ['This is the project description for for Z Supply.',''],
+		'illuminate': ['This is the project description for Illuminate.',''],
+		'soriano': ['This is the project description for Soriano.',''],
+		'negarin': ['This is the project description for Negarin London.',''],
+		'revolve': ['This is the project description for Revolve.',''],
+		'vow': ['This is the project description for Vow.',''],
+		'equipment': ['This is the project description for Equipment.',''],
+		'urban': ['This is the project description for Urban.',''],
+		'bh': ['This is the project description for BH.',''],
+		'ppz': ['This is the project description for PPZ.',''],
+		'logos': ['This is the project description for logos.',''],
 	}
 	
 	var page = window.location.hash.substring(1);

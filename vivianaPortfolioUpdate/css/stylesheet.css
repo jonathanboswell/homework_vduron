@@ -471,6 +471,21 @@ li a:active {
     display: block;
 }
 
+/* PROJECT PAGE IMAGES */
+
+#imageContainer {
+    max-width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  #imageContainer {
+    padding:0;
+    margin:0;
+  }
+}
+
 /* ABOUT */
 .about {
     height: 750px;
